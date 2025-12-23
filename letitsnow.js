@@ -9,7 +9,7 @@
     
     // Configuration
     const config = {
-        density: { low: 50, medium: 100, high: 150 },
+        density: { low: 50, medium: 200, high: 150 },
         speed: { slow: 0.5, medium: 1, fast: 2 },
         size: { small: { min: 2, max: 4 }, medium: { min: 3, max: 6 }, large: { min: 4, max: 8 } }
     };
