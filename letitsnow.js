@@ -9,10 +9,9 @@
     
     // Configuration
     const config = {
-        density: { low: 50, medium: 200, high: 150 },
+        density: { low: 50, medium: 300, high: 150 },
         speed: { slow: 0.5, medium: 1, fast: 2 },
-        size: { small: { min: 2, max: 4 }, medium: { min: 3, max: 6 }, large: { min: 4, max: 8 } }
-    };
+        size: { small: { min: 2, max: 4 }, medium: { min: 4, max: 8 }, large: { min: 6, max: 12 } }    };
     
     // Get configuration from data attributes
     const snowContainer = document.getElementById('letitsnow') || document.getElementById('letitsnow-area') || document.body;
