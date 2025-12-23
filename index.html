@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❄️ LetItSnow.js - Free Snow Widget for Any Website</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0a0e27;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        pre {
+            background: #1a1f3a;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 2px solid #2d3561;
+        }
+        code {
+            background: #1a1f3a;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .ascii-art {
+            color: #6dd4ff;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 30px 0;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #12172e;
+            border-radius: 8px;
+            border-left: 4px solid #6dd4ff;
+        }
+        h1, h2 {
+            color: #6dd4ff;
+        }
+        .install-box {
+            background: #1a1f3a;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #2d3561;
+        }
+        .copy-btn {
+            background: #6dd4ff;
+            color: #0a0e27;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .copy-btn:hover {
+            background: #8ee4ff;
+        }
+        a {
+            color: #6dd4ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .demo-area {
+            min-height: 300px;
+            background: #1a1f3a;
+            border: 2px dashed #2d3561;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .emoji-row {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<pre class="ascii-art">
+╔═════════════════════════════════════════════════════════════════╗
+║                                                                 ║
+║        ❄️  ❄️  ❄️   LET IT SNOW ON YOUR SITE   ❄️  ❄️  ❄️        ║
+║                                                                 ║
+║            ✨ Free • Open Source • No Signup ✨                 ║
+║                                                                 ║
+╚═════════════════════════════════════════════════════════════════╝
+</pre>
+
+<div class="section">
+    <h2>✨ What is this?</h2>
+    <p>A free, lightweight snow overlay for any website. No account, no tracking, no nonsense. Just copy & paste one line of code and watch it snow! ❄️</p>
+    <p>Perfect for:</p>
+    <div class="emoji-row">🎄 Holiday season websites</div>
+    <div class="emoji-row">🏪 Small business sites</div>
+    <div class="emoji-row">🎨 Personal blogs & portfolios</div>
+    <div class="emoji-row">🎉 Special events & celebrations</div>
+</div>
+
+<div class="section">
+    <h2>🚀 Quick Start (30 seconds)</h2>
+    <p>Add this line before your closing <code>&lt;/body&gt;</code> tag:</p>
+    <div class="install-box">
+        <pre><code>&lt;!-- LetItSnow.js - Free snow widget --&gt;
+&lt;script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer&gt;&lt;/script&gt;</code></pre>
+        <button class="copy-btn" onclick="copyCode('quickstart')">📋 Copy Code</button>
+    </div>
+    <p>That's it! Snow will start falling on your entire page. ❄️</p>
+</div>
+
+<div class="section">
+    <h2>📦 Install Options</h2>
+    
+    <h3>1️⃣ Full Page Snow (Default)</h3>
+    <p>Snow falls across your entire website:</p>
+    <div class="install-box">
+        <pre><code>&lt;script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer&gt;&lt;/script&gt;</code></pre>
+        <button class="copy-btn" onclick="copyCode('fullpage')">📋 Copy</button>
+    </div>
+
+    <h3>2️⃣ Specific Container Only</h3>
+    <p>Add snow to just one section of your page:</p>
+    <div class="install-box">
+        <pre><code>&lt;div id="letitsnow-area"&gt;
+  &lt;!-- Your content here --&gt;
+&lt;/div&gt;
+&lt;script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer&gt;&lt;/script&gt;</code></pre>
+        <button class="copy-btn" onclick="copyCode('container')">📋 Copy</button>
+    </div>
+
+    <h3>3️⃣ Custom Settings</h3>
+    <p>Control density, speed, and size:</p>
+    <div class="install-box">
+        <pre><code>&lt;div id="letitsnow" 
+     data-density="high" 
+     data-speed="medium" 
+     data-size="large"&gt;&lt;/div&gt;
+&lt;script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer&gt;&lt;/script&gt;</code></pre>
+        <button class="copy-btn" onclick="copyCode('custom')">📋 Copy</button>
+    </div>
+    <p><strong>Options:</strong></p>
+    <ul>
+        <li><code>data-density</code>: low, medium, high (default: medium)</li>
+        <li><code>data-speed</code>: slow, medium, fast (default: medium)</li>
+        <li><code>data-size</code>: small, medium, large (default: medium)</li>
+    </ul>
+
+    <h3>4️⃣ CMS / No-Code Platforms</h3>
+    <p><strong>WordPress, Wix, Squarespace, Shopify:</strong></p>
+    <ol>
+        <li>Find "Custom HTML" or "Code Injection" in your settings</li>
+        <li>Paste the script from option #1 above</li>
+        <li>Save and publish! ❄️</li>
+    </ol>
+</div>
+
+<div class="section">
+    <h2>🌐 CDN Options</h2>
+    <p>Multiple ways to load the script:</p>
+    <div class="install-box">
+        <pre><code>&lt;!-- GitHub Pages (Main) --&gt;
+&lt;script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer&gt;&lt;/script&gt;
+
+&lt;!-- jsDelivr CDN (Alternative) --&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/lozturner/letitsnow@main/letitsnow.js" defer&gt;&lt;/script&gt;</code></pre>
+    </div>
+</div>
+
+<div class="section">
+    <h2>💬 Share & Promote</h2>
+    <p>Spread the snow! Here's how I'm sharing this:</p>
+    <ul>
+        <li>🏘️ <strong>Nextdoor:</strong> Post in local groups for small businesses</li>
+        <li>🗨️ <strong>Reddit:</strong> r/webdev, r/InternetIsBeautiful</li>
+        <li>📱 <strong>Social Media:</strong> Tag with #LetItSnowJS #FreeWebTools</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>🎨 Live Demo</h2>
+    <div class="demo-area">
+        <div style="text-align: center; z-index: 10;">
+            <h3 style="color: #6dd4ff;">❄️ Snow Demo Area ❄️</h3>
+            <p>Check the background - snow is falling!</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📄 License & Source</h2>
+    <p>100% Free & Open Source (MIT License)</p>
+    <p>🔗 <a href="https://github.com/lozturner/letitsnow">GitHub Repository</a></p>
+    <p>Made with ❄️ by <a href="https://github.com/lozturner">@lozturner</a></p>
+</div>
+
+<pre class="ascii-art">
+┌─────────────────────────────────────────────────────────────┐
+│  *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   │
+│ ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *    │
+│  *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   *   ❄   │
+└─────────────────────────────────────────────────────────────┘
+</pre>
+
+<script>
+function copyCode(type) {
+    let code = '';
+    if (type === 'quickstart' || type === 'fullpage') {
+        code = '<script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer></script>';
+    } else if (type === 'container') {
+        code = '<div id="letitsnow-area">\n  <!-- Your content here -->\n</div>\n<script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer></script>';
+    } else if (type === 'custom') {
+        code = '<div id="letitsnow" \n     data-density="high" \n     data-speed="medium" \n     data-size="large"></div>\n<script src="https://lozturner.github.io/letitsnow/letitsnow.js" defer></script>';
+    }
+    navigator.clipboard.writeText(code).then(() => {
+        alert('✅ Copied to clipboard!');
+    });
+}
+</script>
+
+<!-- Load the snow widget on this demo page -->
+<script src="letitsnow.js" defer></script>
+
+</body>
+</html>
